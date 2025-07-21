@@ -1,0 +1,7 @@
+cl\kibernumac5\service\ProcesarNotificacion.class
+cl\kibernumac5\service\SelectorCanal.class
+cl\kibernumac5\model\Destino.class
+cl\kibernumac5\model\Historial.class
+cl\kibernumac5\service\NotificacionEmail.class
+cl\kibernumac5\model\Notificacion.class
+cl\kibernumac5\service\NotificacionSMS.class

@@ -21,7 +21,7 @@ public class ProcesarNotificacion {
 
     public boolean procesarNotificacion(Destino destino, String mensaje, String canal) {
 
-        if(destino == null || mensaje == "") {
+        if(destino == null || mensaje.trim() == "") {
             throw new IllegalArgumentException("Todos los campos se deben rellenar");
         }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cl.kibernumac5.NotificationCenterTest" time="0.447" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cl.kibernumac5.NotificationCenterTest" time="0.421" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.15_6\bin"/>
-    <property name="sun.java.command" value="C:\Users\mamud\AppData\Local\Temp\surefire9979409357297878286\surefirebooter16508528545208355777.jar C:\Users\mamud\AppData\Local\Temp\surefire9979409357297878286 2025-07-20T06-41-49_545-jvmRun1 surefire16135534781205360173tmp surefire_026747284500892384tmp"/>
+    <property name="sun.java.command" value="C:\Users\mamud\AppData\Local\Temp\surefire11147166463766583036\surefirebooter14749868135106086356.jar C:\Users\mamud\AppData\Local\Temp\surefire11147166463766583036 2025-07-20T21-45-00_979-jvmRun1 surefire14066166751998694950tmp surefire_09751467858407494380tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mamud\Desktop\Automatizacion de pruebas\Actividad 5,6, modular\notification-center\target\test-classes;C:\Users\mamud\Desktop\Automatizacion de pruebas\Actividad 5,6, modular\notification-center\target\classes;C:\Users\mamud\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\mamud\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mamud\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mamud\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mamud\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\mamud\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mamud\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\mamud\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\mamud\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\mamud\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\mamud\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mamud\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.14.0\cucumber-junit-platform-engine-7.14.0.jar;C:\Users\mamud\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\mamud\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\mamud\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\mamud\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mamud\.m2\repository\org\mockito\mockito-junit-jupiter\4.11.0\mockito-junit-jupiter-4.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mamud\AppData\Local\Temp\surefire9979409357297878286\surefirebooter16508528545208355777.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mamud\AppData\Local\Temp\surefire11147166463766583036\surefirebooter14749868135106086356.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6-LTS"/>
@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="notificacionEmail_pruebaEmail" classname="cl.kibernumac5.NotificationCenterTest" time="0.431"/>
+  <testcase name="notificacionEmail_pruebaEmail" classname="cl.kibernumac5.NotificationCenterTest" time="0.398"/>
   <testcase name="notificacionSMS_pruebaSMS" classname="cl.kibernumac5.NotificationCenterTest" time="0"/>
 </testsuite>
