@@ -3,7 +3,6 @@ package cl.kibernumac5;
 // import cl.kibernumac5.service.Validador;
 import cl.kibernumac5.model.Historial;
 import cl.kibernumac5.model.Destino;
-import cl.kibernumac5.service.NotificacionSMS;
 import cl.kibernumac5.service.ProcesarNotificacion;
 import cl.kibernumac5.service.SelectorCanal;
 import cl.kibernumac5.model.Notificacion;
@@ -18,16 +17,16 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
+
 // Mockito
 import static org.mockito.BDDMockito.*;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
-import java.util.List;
 
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
+
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
@@ -90,29 +89,25 @@ public class NotificationCenterTest {
         verify(notificacionSMS).proceso(destino, mensaje);
         verify(historial).add((any(Notificacion.class)));
     }
-
+    @Test
+    void notificacionEmail_lanzaExcepcion() {
+        destino = new Destino("correo@invalido.cl");
+        String mensaje = "mensaje";
+        String canal = "Email";
     
-
-
-
+        // Simula que el canal Email lanza una excepción
+        given(notificacionEmail.proceso(destino, mensaje))
+            .willThrow(new RuntimeException("Fallo en envío"));
     
-//     @Test
-//     void testDestinoValido() {
-//         assertTrue(validador.esDestinoValido("destino")); // Destino Válido
-//         assertFalse(validador.esDestinoValido("")); // Destino Vacío
-//         assertFalse(validador.esDestinoValido(null)); // Destino null
-//         assertNotNull(validador);
-//   }
-
-//     @Test
-//     void testMensajeValido(){
-//         assertTrue(validador.esMensajeValido("Hola mundo")); //Mensaje válido.
-//         assertFalse(validador.esMensajeValido(null)); // Mensaje null.
-//         assertFalse(validador.esMensajeValido("")); //Mensaje vacío.
-//     }
-
+        assertThrows(RuntimeException.class, () -> {
+            procesarNotificacion.procesarNotificacion(destino, mensaje, canal);
+        });
     
-    
+        verify(notificacionEmail).proceso(destino, mensaje);
+        // No se debería guardar en el historial si falla
+        verify(historial, never()).add(any());
+    }
+
 
 
 }

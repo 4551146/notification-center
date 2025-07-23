@@ -21,7 +21,7 @@ public class ProcesarNotificacion {
 
     public boolean procesarNotificacion(Destino destino, String mensaje, String canal) {
 
-        if(destino == null || mensaje.trim() == "") {
+       if (destino == null || mensaje.trim().isEmpty()) {
             throw new IllegalArgumentException("Todos los campos se deben rellenar");
         }
 
@@ -33,6 +33,8 @@ public class ProcesarNotificacion {
         } else{
             throw new IllegalArgumentException("Canal desconocido");
         }
+
+
         if (resultado) {
             historial.add(new Notificacion(destino, mensaje, canal, LocalDateTime.now()));
         }
